@@ -1,0 +1,400 @@
+@font-face {
+	font-family: 'Teddy Bear';
+	src: url('../fonts/teddy_bear.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/teddy_bear.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/teddy_bear.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/teddy_bear.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/teddy_bear.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/teddy_bear.svg#teddy_bear') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+* {
+    font-family: 'Teddy Bear'
+}
+
+.logo {
+    font-family: 'Teddy Bear';
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(128, 125, 125);
+}
+
+.navbar_right>li {
+    position: relative;
+    text-align: right;
+}
+
+.icon>li {
+    text-align: right;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 0;
+}
+
+.form-group .form-control {
+    padding-left: 2.375rem;
+}
+
+.form-control {
+    display: block;
+    width: 90%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.form-group .form-control-icon {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+
+}
+
+.dropdown-item {
+    color: rgb(128, 125, 125);
+}
+
+span {
+    color: rgb(218, 182, 210);
+}
+
+.header{
+    background-image: url(./img/pion.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.overlay{
+	background: rgba(169, 169, 169, 0.4);
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.header_content{
+	position: absolute;
+	top: 30%;
+	left: 8%;
+	color: white;
+	padding: 2rem;
+    text-shadow: 1px 1px 1px rgb(90, 84, 84);
+}
+
+.btn_header {
+    background-color: rgb(169, 169, 169);
+    border: rgb(90, 84, 84);
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+
+.btn_header:hover {
+    background-color: rgb(128, 127, 127);
+}
+
+.btn_header:visited, .btn_header:focus, .btn_header:active {
+    outline:0;
+}
+
+.solutions h1, .catalog h1, .rose h1{
+	margin: 40px;
+    color: rgb(128, 125, 125);
+}
+
+.solutions img:hover, .catalog img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+  
+ 
+.solutions .btn, .catalog .btn {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(150, 148, 148);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px;
+}
+  
+.solutions .btn:hover {
+    background-color: rgb(90, 84, 84);
+}
+
+.popular h1{
+    margin-top: 40px;
+	padding: 40px;
+    color: white;
+}
+
+.popular {
+    background-color: rgb(160, 160, 160);
+    padding-bottom: 70px;
+}
+
+.arrow i {
+    border: solid rgb(90, 84, 84);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.arrow i:hover {
+    border-color: white;
+}
+
+.arrow i.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow i.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+span.arrow {
+    position: absolute;
+    right: 5%;
+}
+
+@media (max-width:768px) {
+    span.arrow {
+        visibility: hidden;
+    }
+}
+
+.popular p {
+    text-align: center;
+    color: white;
+}
+
+.popular img, .rose img {
+    padding: 0 15px;
+}
+
+.btn_top_left {
+    background-color:rgb(218, 182, 210);
+    color: white;
+    border-radius: 0;
+    padding: 0px 2px;
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    width:40px
+}
+
+.btn_top_left:hover {
+    background-color:rgb(218, 182, 210);
+    color: white;
+}
+
+.btn_top_right {
+    position: absolute;
+    left: 227px;
+    top: 0px;
+    background-color:white;
+    border-radius: 0;
+    padding: 0 5px;
+    border-top: 1px solid rgb(216, 214, 214);
+    border-right: 1px solid rgb(216, 214, 214);
+}
+
+@media (max-width:1199px) {
+    .btn_top_right {
+        position: absolute;
+        left: 182px;
+    }
+}
+
+@media (max-width:991px) {
+    .btn_top_right {
+        position: absolute;
+        left: 122px;
+    }
+}
+
+@media (max-width:768px) {
+    .btn_top_right {
+        position: absolute;
+        left: 302px;
+    }
+}
+
+
+.btn_bottom {
+    background-color:rgb(218, 182, 210);
+    color: rgb(73, 72, 72);
+    border-radius: 0;
+    padding: 0px 2px;
+    position: absolute;
+    top:393px;
+    left: 185px;
+    width:70px;
+    height:30px;
+}
+
+.btn_bottom:hover {
+    background-color: rgb(90, 84, 84);
+    color: white;
+}
+
+@media (max-width:768px) {
+    .popular p, .rose p {
+        margin-left: -100px;
+    }
+
+    .btn_bottom {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+}
+
+.footer {
+    padding-top: 40px;
+    border-top: 1px solid rgb(180, 178, 178);
+}
+
+.footer h6 {
+    color: rgb(90, 84, 84);
+    font-weight: bold;
+}
+
+.footer a, .footer p {
+    color: rgb(128, 125, 125);
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+.footer_icon {
+    color: rgb(128, 125, 125);
+}
+
+.icon:hover {
+    color: rgb(90, 84, 84);
+}
+
+.btn_submit {
+    border: 1px solid rgb(180, 178, 178);
+    background-color: rgb(180, 178, 178);
+    width:100%
+}
+
+.copyright {
+    border-top: 1px solid #e5e5e5;
+    margin: 15px;
+    padding-top: 20px 0;
+    text-align: center;
+    color: rgb(90, 84, 84);
+    font-size: 14px;
+}
+
+.catalog, .rose {
+    margin-top: 60px;
+}
+
+.tomain {
+    margin: 110px 100px 20px;
+}
+
+.tomain a {
+    color: rgb(128, 125, 125);
+    
+}
+
+.tomain a:hover {
+    color: rgb(90, 84, 84);
+    text-decoration: none;
+}
+
+.rose p {
+    color: rgb(90, 84, 84);
+    text-align: center;
+}
+
+.rose h6 {
+    margin-left: 15px;
+}
+
+
+.page-link {
+    color: rgb(90, 84, 84);
+}
+
+.page-item.active {
+    color: white;
+}
+
+.rose a {
+    color: black;
+}
+
+.rose a:hover {
+    text-decoration: none;
+    color: rgb(90, 84, 84);
+}
+
+.rose_page {
+    margin-left: 100px;
+}
+
+@media (min-width:576px) {
+    .rose_page {
+        padding-left: 0px;
+        margin: 0;
+    }
+}
+
+.card .img-fluid {
+    position: relative;
+    left: 30%;
+
+}
+
+.gotomain {
+    float:right;
+    margin-right:30px;
+    color: rgb(218, 182, 210);;
+}
+
+.gotoshop {
+    position: absolute;
+    left: 45%;
+    margin-right:30px;
+    color: rgb(218, 182, 210);;
+}
+
+.order {
+    height:45px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
